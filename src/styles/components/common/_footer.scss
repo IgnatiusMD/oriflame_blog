@@ -1,0 +1,42 @@
+#Footer {
+    display: flex;
+    width: 100%;
+    background-color: $main-blue;
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem 4rem;
+        width: 100%;
+        gap: 1rem;
+
+        .fw-up {
+            display: flex;
+            gap: 3rem;
+
+            .fw-rows {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .fwr-head {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .fwr-content {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        .fw-down {
+            display: flex;
+            justify-content: space-between;
+
+            .fwd-socials {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+}
