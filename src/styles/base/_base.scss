@@ -1,0 +1,13 @@
+@use '../base/colors' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PoppinsMedium';
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}

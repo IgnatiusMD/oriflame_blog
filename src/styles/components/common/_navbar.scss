@@ -1,0 +1,41 @@
+#NavigationBar {
+    display: flex;
+    width: 100%;
+    background-color: $main-blue;
+
+    position: sticky;
+    top: 0;
+    transition: 0.3s;
+    
+    .nb-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 5rem;
+        width: 100%;
+
+        .nbw-center {
+            display: flex;
+            gap: 2.5rem;
+
+            a {
+                background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+                transition: 0.5s background-size;
+                background-position: left bottom;
+            }
+
+            a:hover {
+                background-size: 100% .1em;
+                background-position: left bottom;
+            }
+        }
+    }
+}
+
+#NavigationBar.hidden {
+    transform: translateY(-100%);
+}
+  
+#NavigationBar.visible {
+    transform: translateY(0);
+}
