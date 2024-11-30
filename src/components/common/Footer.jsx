@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
@@ -49,10 +51,10 @@ const Footer = () => {
           <div className="fw-down">
             <p>&#169; 2024 Copyright Ignatius Michael Dinata</p>
             <div className="fwd-socials">
-              <p>Instagram</p>
-              <p>Facebook</p>
-              <p>Twitter</p>
-              <p>Youtube</p>
+              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faYoutube} />
             </div>
           </div>
         </div>
